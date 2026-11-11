@@ -43,7 +43,7 @@ parquet = { version = "60", default-features = false, features = [
     "flate2-zlib-rs",
     "lz4",
 ] }
-rusqlite = "0.42"
+rusqlite = { version = "0.42", features = ["bundled"] }
 serde = { version = "1.0", features = ["derive"] }
 serde_json = { version = "1.0", features = ["preserve_order"] }
 toml = "0.8"
